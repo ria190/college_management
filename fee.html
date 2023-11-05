@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fee Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+         background-image: url('https://th.bing.com/th/id/R.0e02b7651ddbd4342cdf4b57389d89c2?rik=vdeei9gMIWBy2Q&riu=http%3a%2f%2fiiita.ac.in%2fuploads%2fcarousel%2fcampus818901.jpg&ehk=TmQSmfgIiY8%2bmrcnAsNb2FCnhwBqQGQI%2fI4owrmhN4U%3d&risl=&pid=ImgRaw&r=0');
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .payment-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .payment-item {
+            width: 45%;
+            margin: 5px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: left;
+        }
+        .due {
+            border-left: 5px solid #ff5722;
+        }
+        .payment-button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .payment-button:hover {
+            background-color: #0056b3;
+        }
+.due a {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+  
+    <div class="container">
+        <h2>Fee Details</h2>
+
+        <div class="section">
+            <h3>Payment Details</h3>
+            <div class="payment-list">
+                <div class="payment-item">
+                    Payment ID: 12345
+                    <br>Amount: ₹ 5000
+                </div>
+                <div class="payment-item">
+                    Payment ID: 12346
+                    <br>Amount: ₹ 66000
+                </div>
+                <div class="payment-item">
+                    Payment ID: 12347
+                    <br>Amount: ₹ 56700
+                </div>
+                <div class="payment-item">
+                    Payment ID: 12348
+                    <br>Amount: ₹ 3800
+                </div>
+                <div class="payment-item">
+                    Payment ID: 12349
+                    <br>Amount: ₹ 9000
+                </div>
+                <div class="payment-item">
+                    Payment ID: 12350
+                    <br>Amount: ₹ 11000
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Due Payments</h3>
+            <div class="payment-list">
+                <div class="payment-item due">
+                    Payment ID: 23451
+                    <br>Amount: ₹ 78200
+                    <br>Deadline: 2023-12-15
+
+  <a href="payment.html">
+                    <button class="payment-button">Pay Now</button>
+               </a>
+                </div>
+                <div class="payment-item due">
+                    Payment ID: 23452
+                    <br>Amount: ₹ 34250
+                    <br>Deadline: 2023-12-20
+
+  <a href="payment.html">
+                    <button class="payment-button">Pay Now</button>
+</a>
+                </div>
+                <div class="payment-item due">
+                    Payment ID: 23453
+                    <br>Amount: ₹ 22000
+                    <br>Deadline: 2023-12-10
+
+         <a href="payment.html">
+                    <button class="payment-button">Pay Now</button>
+</a>
+                </div>
+                <div class="payment-item due">
+                    Payment ID: 23454
+                    <br>Amount: ₹ 34210
+                    <br>Deadline: 2023-12-25
+
+                    <a href="payment.html">
+        <button class="payment-button">Pay Now</button>
+</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

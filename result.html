@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Marksheet</title>
+    <style> 
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+  }
+  
+  header {
+      background-color: #0074a1;
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+  
+  h1 {
+      margin: 0;
+  }
+  
+  main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  ul {
+      list-style: none;
+      padding: 0;
+  }
+  
+  li {
+      margin-bottom: 10px;
+  }
+  
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+  }
+  
+  th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+  }
+  
+  th {
+      background-color: #0074a1;
+      color: white;
+  }
+  
+  a {
+      text-decoration: none;
+      color: #0074a1;
+  }
+  
+    
+</style>
+    
+
+</head>
+<body>
+  <div class="header">
+    <header>
+        <h1>Marksheet</h1>
+        <p>Overall CGPA: 3.5</p>
+    </header>
+    <main>
+        
+            <p>Select a Semester:</p>
+            <ul>
+                <li><a href="semester1.html">Semester 1</a></li>
+                <li><a href="semester2.html">Semester 2</a></li>
+                <li><a href="semester3.html">Semester 3</a></li>
+                <li><a href="semester4.html">Semester 4</a></li>
+                <li><a href="semester5.html">Semester 5</a></li>
+                <li><a href="semester6.html">Semester 6</a></li>
+                <li><a href="semester7.html">Semester 7</a></li>
+                <li><a href="semester8.html">Semester 8</a></li>
+               
+            </ul>
+            
+            <h2>CGPA Over Semesters</h2>
+            <canvas id="cgpaChart" width="400" height="200"></canvas>
+        </main>
+        
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="chart-data.js"></script> 
+        <script>
+            // JavaScript code to create the CGPA chart
+            const ctx = document.getElementById('cgpaChart').getContext('2d');
+            const chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Semester 1', 'Semester 2', 'Semester 3', 'Semester 4', 'Semester 5', 'Semester 6', 'Semester 7', 'Semester 8'],
+                    datasets: [{
+                        label: 'CGPA',
+                        data: cgpaData, // An array with CGPA data, to be defined in chart-data.js
+                        borderColor: '#0074a1',
+                        fill: false,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 4.0 // Set the maximum CGPA value
+                        }
+                    }
+                }
+            });
+        </script>
+        </main>
+      </div>  
+    
+</body>
+</html>
+
+
+
+

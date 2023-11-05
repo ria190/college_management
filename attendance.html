@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dynamic Calendar JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font Link for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="script.js" defer></script>
+    <style>
+      /* Invert the colors for the calendar */
+           
+      .weeks li {
+        background-color: rgb(252, 252, 252); Set the background color of week days
+        color: white; /* Set the text color of week days */
+      }
+      
+      .days li {
+        background-color: rgb(255, 255, 255); Set the background color of days
+       color: black; /* Set the text color of days */
+      }
+
+      .current-date {
+        display: inline-block;
+        color: black; /* Set the text color to black */
+        padding-left: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="nav">
+        <ul>
+          <li><a class="active" href="index.html">DASHBOARD</a></li>
+          <li><a href="attendance.html">ATTENDANCE</a></li>
+          <li><a href="result.html">RESULT</a></li>
+          <li><a href="academics.html">ACADEMICS</a></li>
+          <li><a href="fee.html">FEE DETAILS</a></li>
+        </ul>
+      </div>
+
+      <div class="centered-content">
+        <div class="wrapper">
+          <header>
+            <div class="icons" style="display: flex; align-items: center; justify-content: center; padding-top: 8px;">
+              <span id="prev" class="material-symbols-rounded">chevron_left</span>
+              <p class="current-date" style="color: black;"></p>
+              <span id="next" class="material-symbols-rounded">chevron_right</span>
+            </div>
+            
+          </header>
+          <div class="calendar">
+            <ul class="weeks" style="font-size: 40px;">
+              <li>Sun</li>
+              <li>Mon</li>
+              <li>Tue</li>
+              <li>Wed</li>
+              <li>Thu</li>
+              <li>Fri</li>
+              <li>Sat</li>
+            </ul>
+            <ul class="days"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
