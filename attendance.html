@@ -10,20 +10,22 @@
     <script src="script.js" defer></script>
     <style>
       /* Invert the colors for the calendar */
-           
+      .nav a {
+        color: white;
+      } 
       .weeks li {
         background-color: rgb(252, 252, 252); Set the background color of week days
         color: white; /* Set the text color of week days */
       }
       
       .days li {
-        background-color: rgb(255, 255, 255); Set the background color of days
-       color: black; /* Set the text color of days */
+        background-color:black; Set the background color of days
+       color: white; /* Set the text color of days */
       }
 
       .current-date {
         display: inline-block;
-        color: black; /* Set the text color to black */
+        color: white; /* Set the text color to black */
         padding-left: 15px;
       }
     </style>
@@ -35,7 +37,7 @@
           <li><a class="active" href="index.html">DASHBOARD</a></li>
           <li><a href="attendance.html">ATTENDANCE</a></li>
           <li><a href="result.html">RESULT</a></li>
-          <li><a href="academics.html">ACADEMICS</a></li>
+          <li><a href="dash.html">ACADEMICS</a></li>
           <li><a href="fee.html">FEE DETAILS</a></li>
         </ul>
       </div>
@@ -60,7 +62,7 @@
               <li>Fri</li>
               <li>Sat</li>
             </ul>
-            <ul class="days"></ul>
+            <ul class="days" ></ul>
           </div>
         </div>
       </div>
